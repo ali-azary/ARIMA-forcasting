@@ -15,7 +15,8 @@ partial autocorrelation function (PACF) gives the partial correlation of a stati
 $$\phi_{1,1} = corr(z_{t+1},z_t), for k=1$$ 
 $$\phi_{k,k} = corr(z_{t+k}-\hat z_{t+k},z_t-\hat z_t), for k \ge 2$$ 
 $\hat z_{t+k}$ and $\hat z_t$ are linear combinations of $z_{t+1},\cdots , z_{t+k-1}$ that minimize the mean squared error of $z_{t+1}$ and $z_{t+k-1}$ respectively. For stationary processes,
-$$\hat z_{t+k} = \beta_1 z_{t+k-1} + \cdots +\beta_{k-1} z_{t+1}$ and $\hat z_{t} = \beta_1 z_{t+1} + \cdots +\beta_{k-1} z_{t+k-1}$$ 
+$$\hat z_{t+k} = \beta_1 z_{t+k-1} + \cdots +\beta_{k-1} z_{t+1}$$ 
+$$\hat z_{t} = \beta_1 z_{t+1} + \cdots +\beta_{k-1} z_{t+k-1}$$ 
 Durbin–Levinson Algorithm
  
 
