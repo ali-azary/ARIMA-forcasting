@@ -8,8 +8,8 @@ with the differencing variable d, which is used to remove the trend and convert 
  $$\left(1-\sum_{i=1}^p \alpha_i L^i\right)X_t=\left(1+\sum_{i=1}^q \theta_i L^i \right) \varepsilon_t$$
 augmented Dickey–Fuller test (ADF) tests the null hypothesis that a unit root is present in a time series sample. The alternative hypothesis is different depending on which version of the test is used, but is usually stationarity or trend-stationarity
 $$\Delta y_t = \alpha + \beta t + \gamma y_{t-1} + \cdots + \delta_{p-1} \Delta y_{t-p+1} +\varepsilon_t$$
-The unit root test  If the calculated test statistic is less (more negative) than the critical value, then the null hypothesis of   is rejected and no unit root is present
- 
+The unit root test  If the calculated test statistic is less (more negative) than the critical value, then the null hypothesis of $\gamma=0$ is rejected and no unit root is present
+$$DF_\tau = \frac{\hat \gamma}{SE(\hat \gamma)}$$
 If p-value less than 0.01 null hyp rejected so time series is stationary.
 partial autocorrelation function (PACF) gives the partial correlation of a stationary time series with its own lagged values,
  
