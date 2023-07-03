@@ -6,7 +6,7 @@ auto regressive AR(p) component refers to the use of past values in the regressi
 moving average MA(q) component represents the error of the model as a combination of previous error terms
 with the differencing variable d, which is used to remove the trend and convert a non-stationary time series to a stationary one
 
- $1-\sum_{i}^{\prime{p}}$
+ $1-\sum_{i}^{p'}$
  
  augmented Dickey–Fuller test (ADF) tests the null hypothesis that a unit root is present in a time series sample. The alternative hypothesis is different depending on which version of the test is used, but is usually stationarity or trend-stationarity
 ¬ 
