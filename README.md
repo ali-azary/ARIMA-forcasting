@@ -20,12 +20,15 @@ $$\hat z_{t} = \beta_1 z_{t+1} + \cdots +\beta_{k-1} z_{t+k-1}$$
 Durbin–Levinson Algorithm
 $$\phi_{n, n}=\frac{\rho(n)-\sum_{k-1}^{n-1} \phi_{n-1, k} \rho(n-k)}{1-\sum_{k=1}^{n-1} \phi_{n-1, k} \rho(k)}$$
 The order p and q can be determined using the sample autocorrelation function (ACF), partial autocorrelation function (PACF), and/or extended autocorrelation function (EACF) method
- Akaike information criterion (AIC)h
-	
+
+Akaike information criterion (AIC)
+$$\mathrm{AIC}=-2 \log (L)+2(p+q+k)$$ 
 
 corrected AIC for ARIMA models 
- 
+$$\mathrm{AICc}=\mathrm{AIC}+\frac{2(p+q+k)(p+q+k+1)}{T-p-q-k-1}$$
+
 Bayesian Information Criterion (BIC) 
+$$\mathrm{BIC}=\mathrm{AIC}+((\log T)-2)(p+q+k)$$
  
 minimize the AIC, AICc or BIC values for a good model
 
