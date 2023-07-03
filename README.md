@@ -18,8 +18,7 @@ $\hat z_{t+k}$ and $\hat z_t$ are linear combinations of $z_{t+1},\cdots , z_{t+
 $$\hat z_{t+k} = \beta_1 z_{t+k-1} + \cdots +\beta_{k-1} z_{t+1}$$ 
 $$\hat z_{t} = \beta_1 z_{t+1} + \cdots +\beta_{k-1} z_{t+k-1}$$ 
 Durbin–Levinson Algorithm
- $$ \phi _ {n,n} $ = $ \frac {\rho (n)-\sum _ {k-1}^ {n-1}\phi _ {n-1},k\rho (n-k)}{1-1} 1- \sum _ {i=1}^ {n-1} $ $ \phi _ {n-1.k\rho (k)} $$ 
-
+$$\phi_{n, n}=\frac{\rho(n)-\sum_{k-1}^{n-1} \phi_{n-1, k} \rho(n-k)}{1-\sum_{k=1}^{n-1} \phi_{n-1, k} \rho(k)}$$
 
 The order p and q can be determined using the sample autocorrelation function (ACF), partial autocorrelation function (PACF), and/or extended autocorrelation function (EACF) method
  Akaike information criterion (AIC)h
