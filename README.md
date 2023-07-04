@@ -1,11 +1,12 @@
 # ARIMA-forcasting
+
 autoregressive integrated moving average (ARIMA) model is a generalization of an autoregressive moving average (ARMA) 
- non-stationarity in the sense of mean (but not variance/autocovariance)
+non-stationarity in the sense of mean (but not variance/autocovariance)
 combination of two models, the auto-regressive and the moving average
 auto regressive AR(p) component refers to the use of past values in the regression equation
 moving average MA(q) component represents the error of the model as a combination of previous error terms
 with the differencing variable d, which is used to remove the trend and convert a non-stationary time series to a stationary one
- $$\left(1-\sum_{i=1}^p \alpha_i L^i\right)X_t=\left(1+\sum_{i=1}^q \theta_i L^i \right) \varepsilon_t$$
+$$\left(1-\sum_{i=1}^p \alpha_i L^i\right)X_t=\left(1+\sum_{i=1}^q \theta_i L^i \right) \varepsilon_t$$
 augmented Dickey–Fuller test (ADF) tests the null hypothesis that a unit root is present in a time series sample. The alternative hypothesis is different depending on which version of the test is used, but is usually stationarity or trend-stationarity
 $$\Delta y_t = \alpha + \beta t + \gamma y_{t-1} + \cdots + \delta_{p-1} \Delta y_{t-p+1} +\varepsilon_t$$
 The unit root test  If the calculated test statistic is less (more negative) than the critical value, then the null hypothesis of $\gamma=0$ is rejected and no unit root is present
@@ -32,3 +33,5 @@ $$\mathrm{BIC}=\mathrm{AIC}+((\log T)-2)(p+q+k)$$
  
 minimize the AIC, AICc or BIC values for a good model
 
+![Rplot02](https://github.com/ali-azary/ARIMA-forcasting/assets/69943289/b567c30d-48a3-4aae-87bb-24899a922628)
+![Rplot01](https://github.com/ali-azary/ARIMA-forcasting/assets/69943289/f97da81d-b133-4fc6-a646-317b8f263487)
